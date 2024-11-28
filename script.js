@@ -23,3 +23,11 @@ const scores = [85, 92, 78, 90];
 const [firstScore, secondScore] = scores;
 console.log("First Score:", firstScore);
 console.log("Second Score:", secondScore);
+//Add graduationYear and clone student object
+const clonedStudent = { ...student, graduationYear: 2024 };
+console.log("Cloned Student:", clonedStudent);
+
+// Merge courses
+const newCourses = ["Art", "Programming"];
+const mergedCourses = [...student.courses, ...newCourses];
+console.log("Merged Courses:", mergedCourses);
