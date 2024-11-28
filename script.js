@@ -31,3 +31,15 @@ console.log("Cloned Student:", clonedStudent);
 const newCourses = ["Art", "Programming"];
 const mergedCourses = [...student.courses, ...newCourses];
 console.log("Merged Courses:", mergedCourses);
+
+student.addCourse = function (course) {
+    this.courses.push(course);
+    console.log(`Course "${course}" added!`);
+};
+
+student.totalCourses = function () {
+    return this.courses.length;
+};
+
+student.addCourse("Physics");
+console.log("Total Courses:", student.totalCourses());
