@@ -43,3 +43,6 @@ student.totalCourses = function () {
 
 student.addCourse("Physics");
 console.log("Total Courses:", student.totalCourses());
+
+const averageScore = scores.reduce((sum, score) => sum + score, 0) / scores.length;
+console.log("Average Score:", averageScore);
